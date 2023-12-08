@@ -1,0 +1,71 @@
+.organistatie{
+    margin-top: 5rem;
+    width: 100%;
+    min-height: 20vh;
+    padding: 0 9rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+
+    &__title{
+        font-size: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    &__cards{
+        width: 100%;
+        height: 55rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 4rem;
+        list-style: none;
+    }
+
+    &__card{
+        width: calc(100% / 3 - 4rem);
+        height: 50rem;
+        border: 0.3rem solid #EB0101;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        position: relative;
+    }
+
+    &__cardTitle{
+        font-size: 2.5rem;
+        text-shadow: -1px 0 #EB0101, 0 1px #EB0101, 1px 0 #EB0101, 0 -1px #EB0101;
+        color: white;
+    }
+
+    &__paragraph{
+        font-size: 1.5rem;
+    }
+
+    &__button{
+        position: absolute;
+        bottom: 2%;
+        right: 2%;
+        width: 15rem;
+        height: 6rem;
+        border: 0.3rem solid #EB0101;
+        background: white;
+        font-size: 1.5rem;
+        transition: all 0.4s;
+
+        &:hover{
+            cursor: pointer;
+            background: #EB0101;
+            border-radius: 1rem;
+            font-size: 1.6rem;
+            color: white;
+        }
+
+        &:active{
+            background: rgb(132, 2, 2);
+            border: none;
+        }
+    }
+}
