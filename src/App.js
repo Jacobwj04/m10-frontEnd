@@ -1,19 +1,49 @@
 import './App.css';
-import Navigation from './components/navigation/Navigation';
-import Header from './components/header/Header';
-import Intro from './components/intro/Intro';
-import Organistatie from './components/organistatie/Organistatie';
+import Navigation from './components/Navigation/Navigation';
+import Header from './components/Header/Header';
+import Intro from './components/Intro/Intro';
+import Organistatie from './components/Organistatie/Organistatie';
+import Projecten from './components/projecten/Projecten';
+import ProjectPages from './components/projectPage/ProjectPage';
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
-function App() {
+export default function App() {
+  
+  const navigate = useNavigate();
+
+  const navigateToContacts = () => {
+    navigate('/projectPage', {replace: true});
+  };
+
+  const navigateHome = () => {
+    navigate('/');
+  };
+
   return (
-    <>
-      <Navigation />
-      <Header />
-      <Intro />
-      <Organistatie/>
-    </>
+    <Routes>
+        <Route path="/projectPage" element={<ProjectPage />} />
+        <Route path="/" element={<Home />} />
+      </Routes>
   );
     
 }
 
-export default App;
+function Home() {
+  return(
+    <>
+    <Navigation />
+    <Header />
+    <Intro />
+    <Organistatie/>
+    <Projecten />
+  </>
+  );
+}
+
+function ProjectPage() {
+  return(
+    <>
+     <ProjectPages/>
+    </>
+  );
+}

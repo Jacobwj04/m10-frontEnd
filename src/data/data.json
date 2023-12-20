@@ -86,5 +86,143 @@
             "hiddenTextTwo": "",
             "list": false
         }
+    ],
+    "projecten": [
+        {
+            "id": 0,
+            "title": "Nieuwbouw Spinoza20first",
+            "image": "nieuwbouw.jpeg",
+            "alt": "albeelding van Nieuwbouw Spinoza20first",
+            "text": [
+                {
+
+                }
+            ],
+            "slider": [
+                {
+
+                }
+            ],
+            "link": "www.spinoza20first.nl"
+        },
+        {
+            "id": 1,
+            "title": "Nieuwbouw AICS",
+            "image": "AICS.jpeg",
+            "alt": "albeeling van Nieuwbouw AICS",
+            "text": [
+                {
+                    
+                }
+            ],
+            "slider": [
+                {
+
+                }
+            ],
+            "link": "www.aics.espritscholen.nl"
+        },
+        {
+            "id": 2,
+            "title": "Renovatie Bostheater",
+            "image": "Bostheater.png",
+            "alt": "afbeelding van Renovatie Bostheater",
+            "text": [
+                {
+                    
+                }
+            ],
+            "slider": [
+                {
+
+                }
+            ],
+            "link": "www.bostheater.nl"
+        },
+        {
+            "id": 3,
+            "title": "Renovatie de Wereldburger",
+            "image": "Wereldburger.jpeg",
+            "alt": "albeelding van Renovatie de Wereldburger",
+            "text": [
+                {
+                    
+                }
+            ],
+            "slider": [
+                {
+
+                }
+            ],
+            "link": "www.bsdewereldburger.nl"
+        },
+        {
+            "id": 4,
+            "title": "Kwartiermaker Nationaal Slavernijmuseum",
+            "image": "Slavernijmuseum.jpeg",
+            "alt": "afbeelding van Kwartiermaker Nationaal Slavernijmuseum",
+            "text": [
+                {
+                    
+                }
+            ],
+            "slider": [
+                {
+
+                }
+            ],
+            "link": "https://www.amsterdam.nl/diversiteit/nationaal-slavernijmuseum/"
+        },
+        {
+            "id": 5,
+            "title": "Renovatie Amsterdam Museum",
+            "image": "Amsterdam-Museum.jpeg",
+            "alt": "afbeelding van Renovatie Amsterdam Museum",
+            "text": [
+                {
+                    
+                }
+            ],
+            "slider": [
+                {
+
+                }
+            ],
+            "link": ""
+        },
+        {
+            "id": 6,
+            "title": "Sportpark Goed Genoeg & Clubgebouw AFC",
+            "image": "AFC.jpeg",
+            "alt": "afbeelding van Sportpark Goed Genoeg & Clubgebouw AFC",
+            "text": [
+                {
+                    
+                }
+            ],
+            "slider": [
+                {
+
+                }
+            ],
+            "link": "www.afc.nl"
+        },
+        {
+            "id": 7,
+            "title": "Verbouwing en Nieuwbouw Werven en Overslagpunten",
+            "image": "Werven.jpeg",
+            "alt": "afbeelding van Verbouwing en Nieuwbouw Werven en Overslagpunten",
+            "text": [
+                {
+                    
+                }
+            ],
+            "slider": [
+                {
+
+                }
+            ],
+            "link": ""
+        }
     ]
 }

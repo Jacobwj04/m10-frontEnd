@@ -12,10 +12,8 @@ const changeCardStyle = (id) => {
             if(organistatieList.children[i].id == id){
                 // let cardId = organistatieList.children[i].id;
                 let card = document.getElementById(id);
-                card.style.animationName = "Retract";
-                card.style.animationDuration = "1.2s";
-                card.style.flexDirection = '';
-                card.style.flexWrap = '';
+                card.classList.add("organistatie__card--retract");
+                card.classList.remove("organistatie__card--active")
                 let hiddenTextOne = card.children[2];
                 let hiddenTextTwo = card.children[3];
                 hiddenTextOne.style.display = '';
@@ -26,10 +24,9 @@ const changeCardStyle = (id) => {
                 cardButton.innerText = "Meer Informatie";
             }else{
                 setTimeout(function() {
-                    organistatieList.children[i].style.display = "flex"
-                    organistatieList.children[i].style.animationName = "FadeIn"
-                    organistatieList.children[i].style.animationDuration = "0.4s"
-                  }, 800);
+                    organistatieList.children[i].classList.remove("organistatie__card--remove");
+                    organistatieList.children[i].classList.add("organistatie__card--add");
+                  }, 1000);
             }
         }
     }
@@ -37,10 +34,10 @@ const changeCardStyle = (id) => {
         for(let i = 0; i < organistatieList.children.length; i++){
             if(organistatieList.children[i].id == id){
                 let card = document.getElementById(id);
-                card.style.animationName = "Expand";
-                card.style.animationDuration = "1.2s";
-                card.style.flexDirection = 'row';
-                card.style.flexWrap = 'wrap';
+                organistatieList.children[i].classList.remove("organistatie__card--add");
+                organistatieList.children[i].classList.remove("organistatie__card--remove");
+                card.classList.remove("organistatie__card--retract");
+                card.classList.add("organistatie__card--active")
                 let hiddenTextOne = card.children[2];
                 let hiddenTextTwo = card.children[3];
                 hiddenTextOne.style.display = 'block';
@@ -53,8 +50,8 @@ const changeCardStyle = (id) => {
                 cardButton.innerText = "Minder Informatie";
                 clicked = true;
             }else{
-                organistatieList.children[i].style.display = "none"
-                organistatieList.children[i].style.animationDuration = "1.2s"
+                organistatieList.children[i].classList.remove("organistatie__card--add");
+                organistatieList.children[i].classList.add("organistatie__card--remove");
             }
         }
     }else{
@@ -66,7 +63,7 @@ const changeCardStyle = (id) => {
 
 const Organistatie = () => {
     return(
-        <section className="organistatie">
+        <section className="organistatie" id="organistatie">
             <h2 className="organistatie__title">Organistatie</h2>
             <ul className="organistatie__cards" id="organistatieList">
             {jsonData.organistatieCards.map((card) => (

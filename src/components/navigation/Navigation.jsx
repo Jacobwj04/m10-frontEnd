@@ -9,7 +9,7 @@ const Navigation = () =>{
             </figure>
             <ul className="nav__linksList">
                 <li className="nav__linkItem">
-                    <a href="" className="nav__link">Organistatie</a>
+                    <a href="/#organistatie" className="nav__link">Organistatie</a>
                 </li>
                 <li className="nav__linkItem">
                     <a href="" className="nav__link">Projecten</a>

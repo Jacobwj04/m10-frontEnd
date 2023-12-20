@@ -1,3 +1,14 @@
+@mixin card{
+    height: 50rem;
+    border: 0.3rem solid #EB0101;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    position: relative;
+    animation-fill-mode: forwards;
+}
+
 .organistatie{
     margin-top: 5rem;
     width: 100%;
@@ -31,14 +42,36 @@
 
     &__card{
         width: calc(100% / 3 - 4rem);
-        height: 50rem;
-        border: 0.3rem solid #EB0101;
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        gap: 3rem;
-        position: relative;
-        animation-fill-mode: forwards;
+        @include card;
+
+        &--active{
+            @include card;
+            flex-direction: row;
+            flex-wrap: wrap;
+            animation: Expand;
+            animation-duration: 1.2s;
+            animation-fill-mode: forwards;
+        }
+
+        &--retract{
+            @include card;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            animation: Retract;
+            animation-fill-mode: forwards;
+            animation-duration: 1.2s;
+        }
+
+        &--remove{
+            display: none;
+        }
+
+        &--add{
+            @include card;
+            animation: FadeIn;
+            animation-duration: 0.4s;
+            animation-fill-mode: forwards;
+        }
     }
 
     &__cardTitle{
@@ -62,13 +95,13 @@
     &__listItem{
         font-size: 1.6rem;
         &::before {
-            content: ""; /* Add dot bullet */
+            content: ""; 
             display: inline-block;
-            width: 1rem; /* Adjust width as needed */
+            width: 1rem; 
             height: 1rem;
             text-align: center;
-            margin-right: 5px; /* Adjust spacing as needed */
-            border: 1px solid #EB0101; /* Add border style */
+            margin-right: 5px; 
+            border: 1px solid #EB0101; 
           }
     }
 
