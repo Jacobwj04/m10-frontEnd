@@ -6,20 +6,20 @@ import jsonData from '../../data/data.json';
 export default function ProjectPages(props) {
     const searchParams = new URLSearchParams(window.location.search);
     const newId = searchParams.get('id');
+    console.log(newId)
+
+    jsonData.projecten.forEach(card => {
+        if(card.id == newId){
+            const newData = card;
+            return newData;
+        }
+      });
+    
 
     return(
         <>
         <Navigation/>
-        {jsonData.projecten.map((card) => (
-            <>
-            {
-              newId === card.id
-              ? <p>Variables are the same</p>
-                
-              : <p>{card.id}</p>
-            }
-          </>
-        ))}
+        <h2>hoi</h2>
         </>
     )
 }
