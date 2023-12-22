@@ -5,7 +5,7 @@ const Header = () => {
     return(
         <header className="header">
             <figure className="header__imgWrapper">
-                <img src="./img/banner.png" alt="" className="header__img" />
+                <img src={process.env.PUBLIC_URL + '/img/banner.png'} alt="" className="header__img" />
                 <h1 className="header__title">Bouwmanagement en Maatschappelijk Vastgoed</h1>
             </figure>
         </header>

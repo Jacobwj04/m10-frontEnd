@@ -11,7 +11,7 @@ const Intro = () => {
             </li>
             <li className="intro__rightSection">
                 <figure className="intro__imgWrapper">
-                    <img src="./img/Sluisbuurt.png" alt="" className="intro__img" />
+                    <img src={process.env.PUBLIC_URL + '/img/Sluisbuurt.png'} alt="" className="intro__img" />
                 </figure>
             </li>
         </ul>

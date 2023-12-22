@@ -18,7 +18,7 @@ const Projecten = () => {
             {jsonData.projecten.map((card) => (
                 <li className="projecten__card" id={card.id}>
                     <figure className="projecten__figure">
-                        <img src={"./img/" + card.image} alt="" className="projecten__img" />
+                        <img src={process.env.PUBLIC_URL + '/img/' + card.image} alt="" className="projecten__img" />
                         <h3 className="projecten__name">{card.title}</h3>
                     </figure>
                     <div className="projecten__buttonWrapper">

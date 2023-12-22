@@ -5,7 +5,7 @@ const Navigation = () =>{
     return(
         <nav className="nav">
             <figure className="nav__logoWrapper">
-                <img src="./img/logo.png" alt="" className="nav__logo" />
+                <img src={process.env.PUBLIC_URL + '/img/logo.png'} alt="" className="nav__logo" />
             </figure>
             <ul className="nav__linksList">
                 <li className="nav__linkItem">
