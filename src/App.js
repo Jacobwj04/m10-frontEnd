@@ -5,6 +5,7 @@ import Intro from './components/Intro/Intro';
 import Organistatie from './components/Organistatie/Organistatie';
 import Projecten from './components/projecten/Projecten';
 import ProjectPages from './components/projectPage/ProjectPage';
+import WekenBij from './components/wekenBij/WerkenBij';
 import {Routes, Route, useNavigate} from 'react-router-dom';
 import { HashRouter } from 'react-router-dom';
 
@@ -37,6 +38,7 @@ function Home() {
     <Intro />
     <Organistatie/>
     <Projecten />
+    <WekenBij />
   </>
   );
 }
