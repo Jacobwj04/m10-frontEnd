@@ -6,6 +6,7 @@ import Organistatie from './components/Organistatie/Organistatie';
 import Projecten from './components/projecten/Projecten';
 import ProjectPages from './components/projectPage/ProjectPage';
 import {Routes, Route, useNavigate} from 'react-router-dom';
+import { HashRouter } from 'react-router-dom';
 
 export default function App() {
   

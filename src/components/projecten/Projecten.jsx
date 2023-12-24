@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom';
 
 const Projecten = () => {
     return(
-        <section className="projecten">
+        <section className="projecten" id="projecten">
             <h2 className="projecten__title">Projecten</h2>
             <ul className="projecten__cards">
             {jsonData.projecten.map((card) => (
