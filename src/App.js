@@ -7,6 +7,7 @@ import Projecten from './components/projecten/Projecten';
 import ProjectPages from './components/projectPage/ProjectPage';
 import WekenBij from './components/wekenBij/WerkenBij';
 import Footer from './components/Footer/Footer';
+import Contact from './components/Contact/Contact';
 import {Routes, Route, useNavigate} from 'react-router-dom';
 import { HashRouter } from 'react-router-dom';
 
@@ -30,7 +31,7 @@ export default function App() {
     <Routes>
         <Route path="/projectPage" element={<ProjectPage />} />
         <Route path="/" element={<Home />} />
-        <Route path="/contact" element={<Contact />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
   );
     
@@ -59,10 +60,11 @@ function ProjectPage() {
   );
 }
 
-function Contact() {
+function ContactPage() {
   return(
     <>
       <Navigation />
+      <Contact />
       <Footer />
     </>
   );
