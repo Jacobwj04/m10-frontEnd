@@ -1,6 +1,7 @@
 import React from "react";
 import './werkenBij.scss';
 import jsonData from '../../data/data.json';
+import { Link } from "react-router-dom";
 
 export default function WekenBij() {
 
@@ -23,7 +24,7 @@ export default function WekenBij() {
                 </p>
                 <div className="werkenBij__buttonContainer">
                     <a href="https://werkenbij.amsterdam.nl" className="werkenBij__button">Soliciteren</a>
-                    <a href="" className="werkenBij__button">Contact</a>
+                    <Link to="/contact" className="nav__button">Contact</Link>
                 </div>
             </article>
         </section>

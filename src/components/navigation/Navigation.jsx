@@ -32,7 +32,7 @@ const Navigation = () =>{
                 </li>
             </ul>
             <section className="nav__buttonWrapper">
-                <a href="" className="nav__button">Contact</a>
+                <Link to="/contact" className="nav__button">Contact</Link>
             </section>
         </nav>
     );
