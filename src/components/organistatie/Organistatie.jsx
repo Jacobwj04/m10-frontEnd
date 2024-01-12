@@ -57,7 +57,6 @@ const changeCardStyle = (id) => {
     }else{
         clicked = false;
     }
-    console.log(clicked);
 
 };
 

@@ -28,7 +28,7 @@ const Navigation = () =>{
                     <Link to="#" className="nav__link" onClick={() => scrollToSection("projecten")}>Projecten</Link>
                 </li>
                 <li className="nav__linkItem">
-                    <Link to="#" className="nav__link" onClick={() => scrollToSection("organistatie")}>Weken Bij</Link>
+                    <Link to="#" className="nav__link" onClick={() => scrollToSection("wekenBij")}>Weken Bij</Link>
                 </li>
             </ul>
             <section className="nav__buttonWrapper">

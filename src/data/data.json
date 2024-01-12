@@ -21,7 +21,7 @@
     ],
     "banner":[
         {
-            "img": "bammer.png",
+            "img": "bammer.webp",
             "text": "Bouwmanagement en Maatschappelijk Vastgoed"
         }
     ],
@@ -89,9 +89,9 @@
     ],
     "projecten": [
         {
-            "id": 0,
+            "id": 0,    
             "title": "Nieuwbouw Spinoza20first",
-            "image": "nieuwbouw.jpeg",
+            "image": "nieuwbouw.webp",
             "alt": "albeelding van Nieuwbouw Spinoza20first",
             "subtitle": "Spinoza20First: duurzame school en sporthal",
             "text": [
@@ -104,15 +104,15 @@
             ],
             "slider": [
                 {
-                    "image": "nieuwbouw.jpeg",
+                    "image": "nieuwbouw.webp",
                     "alt": "albeelding van Nieuwbouw Spinoza20first"
                 },
                 {
-                    "image": "nieuwbouw2.jpeg",
+                    "image": "nieuwbouw2.webp",
                     "alt": "albeelding van Nieuwbouw Spinoza20first"
                 },
                 {
-                    "image": "nieuwbouw3.jpeg",
+                    "image": "nieuwbouw3.webp",
                     "alt": "albeelding van Nieuwbouw Spinoza20first"
                 }
             ],
@@ -126,7 +126,7 @@
         {
             "id": 1,
             "title": "Nieuwbouw AICS",
-            "image": "AICS.jpeg",
+            "image": "AICS.webp",
             "alt": "albeeling van Nieuwbouw AICS",
             "subtitle": "Amsterdam International Community School (AICS): wereldschool in wereldstad",
             "text": [
@@ -139,19 +139,19 @@
             ],
             "slider": [
                 {
-                    "image": "AICS.jpeg",
+                    "image": "AICS.webp",
                     "alt": "albeeling van Nieuwbouw AICS"
                 },
                 {
-                    "image": "AICS2.jpeg",
+                    "image": "AICS2.webp",
                     "alt": "albeeling van Nieuwbouw AICS"
                 },
                 {
-                    "image": "AICS3.jpeg",
+                    "image": "AICS3.webp",
                     "alt": "albeeling van Nieuwbouw AICS"
                 },
                 {
-                    "image": "AICS4.jpeg",
+                    "image": "AICS4.webp",
                     "alt": "albeeling van Nieuwbouw AICS"
                 }
             ],
@@ -165,7 +165,7 @@
         {
             "id": 2,
             "title": "Renovatie Bostheater",
-            "image": "Bostheater.png",
+            "image": "Bostheater.webp",
             "alt": "afbeelding van Renovatie Bostheater",
             "subtitle": "Bostheater: klassieke attractie, vernieuwde jas",
             "text": [
@@ -178,15 +178,15 @@
             ],
             "slider": [
                 {
-                    "image": "Bostheater.png",
+                    "image": "Bostheater.webp",
                     "alt": "afbeelding van Renovatie Bostheater"
                 },
                 {
-                    "image": "Bostheater2.png",
+                    "image": "Bostheater2.webp",
                     "alt": "afbeelding van Renovatie Bostheater"
                 },
                 {
-                    "image": "Bostheater3.png",
+                    "image": "Bostheater3.webp",
                     "alt": "afbeelding van Renovatie Bostheater"
                 }
             ],
@@ -200,7 +200,7 @@
         {
             "id": 3,
             "title": "Renovatie de Wereldburger",
-            "image": "Wereldburger.jpeg",
+            "image": "Wereldburger.webp",
             "alt": "albeelding van Renovatie de Wereldburger",
             "subtitle": "Wereldburger: prijswinnende renovatie",
             "text": [
@@ -213,11 +213,11 @@
             ],
             "slider": [
                 {
-                    "image": "Wereldburger.jpeg",
+                    "image": "Wereldburger.webp",
                     "alt": "albeelding van Renovatie de Wereldburger"
                 },
                 {
-                    "image": "Wereldburger2.jpeg",
+                    "image": "Wereldburger2.webp",
                     "alt": "albeelding van Renovatie de Wereldburger"
                 }
             ],
@@ -231,7 +231,7 @@
         {
             "id": 4,
             "title": "Kwartiermaker Nationaal Slavernijmuseum",
-            "image": "Slavernijmuseum.jpeg",
+            "image": "Slavernijmuseum.webp",
             "alt": "afbeelding van Kwartiermaker Nationaal Slavernijmuseum",
             "subtitle": "Nationaal Slavernijmuseum",
             "text": [
@@ -244,15 +244,15 @@
             ],
             "slider": [
                 {
-                    "image": "Slavernijmuseum.jpeg",
+                    "image": "Slavernijmuseum.webp",
                     "alt": "afbeelding van Kwartiermaker Nationaal Slavernijmuseum"
                 },
                 {
-                    "image": "Slavernijmuseum2.jpeg",
+                    "image": "Slavernijmuseum2.webp",
                     "alt": "afbeelding van Kwartiermaker Nationaal Slavernijmuseum"
                 },
                 {
-                    "image": "Slavernijmuseum3.jpeg",
+                    "image": "Slavernijmuseum3.webp",
                     "alt": "afbeelding van Kwartiermaker Nationaal Slavernijmuseum"
                 }
             ],
@@ -266,7 +266,7 @@
         {
             "id": 5,
             "title": "Renovatie Amsterdam Museum",
-            "image": "Amsterdam-Museum.jpeg",
+            "image": "Amsterdam-Museum.webp",
             "alt": "afbeelding van Renovatie Amsterdam Museum",
             "subtitle": "Amsterdam Museum: renovatie in voorbereiding",
             "text": [
@@ -279,23 +279,23 @@
             ],
             "slider": [
                 {
-                    "image": "Amsterdam-Museum.jpeg",
+                    "image": "Amsterdam-Museum.webp",
                     "alt": "afbeelding van Renovatie Amsterdam Museum"
                 },
                 {
-                    "image": "Amsterdam-Museum2.jpeg",
+                    "image": "Amsterdam-Museum2.webp",
                     "alt": "afbeelding van Renovatie Amsterdam Museum"
                 },
                 {
-                    "image": "Amsterdam-Museum3.jpeg",
+                    "image": "Amsterdam-Museum3.webp",
                     "alt": "afbeelding van Renovatie Amsterdam Museum"
                 },
                 {
-                    "image": "Amsterdam-Museum4.jpeg",
+                    "image": "Amsterdam-Museum4.webp",
                     "alt": "afbeelding van Renovatie Amsterdam Museum"
                 },
                 {
-                    "image": "Amsterdam-Museum5.jpeg",
+                    "image": "Amsterdam-Museum5.webp",
                     "alt": "afbeelding van Renovatie Amsterdam Museum"
                 }
             ],
@@ -309,7 +309,7 @@
         {
             "id": 6,
             "title": "Sportpark Goed Genoeg & Clubgebouw AFC",
-            "image": "AFC.jpeg",
+            "image": "AFC.webp",
             "alt": "afbeelding van Sportpark Goed Genoeg & Clubgebouw AFC",
             "subtitle": "AFC: nieuwe velden, nieuw clubhuis",
             "text": [
@@ -322,11 +322,11 @@
             ],
             "slider": [
                 {
-                    "image": "AFC.jpeg",
+                    "image": "AFC.webp",
                     "alt": "afbeelding van Sportpark Goed Genoeg & Clubgebouw AFC"
                 },
                 {
-                    "image": "AFC2.jpeg",
+                    "image": "AFC2.webp",
                     "alt": "afbeelding van Sportpark Goed Genoeg & Clubgebouw AFC"
                 }
             ],
@@ -340,7 +340,7 @@
         {
             "id": 7,
             "title": "Verbouwing en Nieuwbouw Werven en Overslagpunten",
-            "image": "Werven.jpeg",
+            "image": "Werven.webp",
             "alt": "afbeelding van Verbouwing en Nieuwbouw Werven en Overslagpunten",
             "subtitle": "Programma Transitie Werven en Overslagpunten",
             "text": [
@@ -353,19 +353,19 @@
             ],
             "slider": [
                 {
-                    "image": "Werven.jpeg",
+                    "image": "Werven.webp",
                     "alt": "afbeelding van Verbouwing en Nieuwbouw Werven en Overslagpunten"
                 },
                 {
-                    "image": "Werven2.jpeg",
+                    "image": "Werven2.webp",
                     "alt": "afbeelding van Verbouwing en Nieuwbouw Werven en Overslagpunten"
                 },
                 {
-                    "image": "Werven3.jpeg",
+                    "image": "Werven3.webp",
                     "alt": "afbeelding van Verbouwing en Nieuwbouw Werven en Overslagpunten"
                 },
                 {
-                    "image": "Werven4.jpeg",
+                    "image": "Werven4.webp",
                     "alt": "afbeelding van Verbouwing en Nieuwbouw Werven en Overslagpunten"
                 }
             ],

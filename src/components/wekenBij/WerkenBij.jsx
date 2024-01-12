@@ -5,7 +5,7 @@ import jsonData from '../../data/data.json';
 export default function WekenBij() {
 
     return(
-        <section className="werkenBij">
+        <section className="werkenBij" id="wekenBij">
             <h2 className="werkenBij__title">Werken bij</h2>
             <article className="werkenBij__card">
                 <h2 className="werkenBij__subtitle">Werken of stage lopen bij BMV</h2>
