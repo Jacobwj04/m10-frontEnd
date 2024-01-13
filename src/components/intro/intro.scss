@@ -53,3 +53,56 @@
         object-fit: cover;
     }
 }
+
+@media screen and (max-width: 71.875rem){
+    .intro{
+        padding: 0 4rem;
+
+        &__rightSection{
+            width: 50%;
+            right: calc(0% + 2rem);
+        }
+    }
+}
+
+@media screen and (max-width: 60.625rem){
+    .intro{
+        flex-direction: column-reverse;
+
+        &__leftSection{
+            position: relative;
+            width: 100%;
+            background: linear-gradient(rgba(255, 255, 255, 0),5%, rgb(255, 255, 255));
+            transform: translateY(-2rem) translateX(2rem);
+            gap: 1rem;
+            padding: 1rem;
+        }
+
+        &__rightSection{
+            transform: translateX(-2rem);
+            width: 100%;
+            position: relative;
+            right: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 30.9375rem){
+    .intro{
+        &__leftSection{
+            height: auto;
+        }
+
+        &__title{
+            font-size: 2.3rem;
+        }
+
+        &__subTitle{
+            font-size: 1.8rem;
+        }
+
+        &__paragraph{
+            font-size: 1.6rem;
+        }
+    }
+}

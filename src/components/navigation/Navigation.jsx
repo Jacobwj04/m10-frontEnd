@@ -2,6 +2,7 @@ import './navigation.scss';
 import { Link } from "react-router-dom";
 import { useLocation } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
+import MobileNavigation from './MobileNavigation';
 
 const scrollToSection = (sectionId) => {
   // Get the section element
@@ -20,6 +21,8 @@ const Navigation = () =>{
     console.log(result)
 
     return(
+        <>
+        <MobileNavigation />
         <nav className="nav">
             <figure className="nav__logoWrapper">
             <Link to="/">
@@ -53,6 +56,7 @@ const Navigation = () =>{
                 </section>
             ) }
         </nav>
+        </>
     );
 }
 
