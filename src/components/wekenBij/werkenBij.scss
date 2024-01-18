@@ -72,3 +72,33 @@
         }
     }
 }
+
+@media screen and (max-width: 73.75rem){
+    .werkenBij{
+
+        &__card{
+            width: 100%;
+            height: auto;
+        }
+
+        &__buttonContainer{
+            position: relative;
+        }
+    }
+}
+
+@media screen and (max-width: 71.875rem){
+    .werkenBij{
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 37.5rem){
+    .werkenBij{
+
+        &__buttonContainer{
+            position: relative;
+            justify-content: center;
+        }
+    }
+}
