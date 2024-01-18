@@ -1,7 +1,7 @@
 .contact{
     height: calc(100vh - 40rem);
     width: 100%;
-    padding: 0 2rem;
+    padding: 0 9rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -73,5 +73,36 @@
         width: 70%;
         height: 70%;
         border: #EB0101 0.3rem solid;
+    }
+}
+
+@media screen and (max-width: 81.25rem){
+    .contact{
+        height: auto;
+
+        &__map{
+            width: 100%;
+            height: 30rem;
+        }
+    }
+}
+
+@media screen and (max-width: 71.875rem){
+    .contact{
+        padding: 0 2rem;
+    }
+}
+
+@media screen and (max-width: 50rem){
+    .contact{
+
+        &__main{
+            flex-wrap: wrap;
+        }
+    
+        &__wrapper{
+            width: 100%;
+            height: 100%;
+        }
     }
 }

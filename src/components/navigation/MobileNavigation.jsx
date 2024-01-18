@@ -79,8 +79,8 @@ export default function MobileNavigation() {
         </nav>
         <ul className="mobileNav__list" id='mobileNav--menu'>
             {result === "contact" || result === "projectPage" ?(
-                <li className="nav__linkItem">
-                <Link to="/" className="nav__link" onClick={() => scrollToSection("organistatie")}>Home</Link>
+                <li className="mobileNav__listItem">
+                <Link to="/" className="mobileNav__link" onClick={() => scrollToSection("organistatie")}>Home</Link>
                 </li>
                 ):(
                 <>
