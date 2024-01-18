@@ -5,6 +5,10 @@ import { useLocation } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 
 export default function Contact() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, []);
+      
     return(
         <section className="contact">
             <h2 className="contact__title">Contact</h2>

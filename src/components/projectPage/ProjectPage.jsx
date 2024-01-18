@@ -5,6 +5,10 @@ import { useLocation } from 'react-router-dom';
 import React, { useState, useEffect } from 'react';
 
 export default function ProjectPages() {
+    useEffect(() => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }, []);
+    
     const location = useLocation();
     const myQuery  = location.search;
     let result = myQuery.slice(4);
