@@ -45,8 +45,8 @@
         position: absolute;
         top: calc(0% + 10rem);
         right: 0;
-        height: 30rem;
-        width: 30rem;
+        height: 0;
+        width: 0;
         border: 0.3rem solid #EB0101;
         background: white;
         z-index: 6;
@@ -55,12 +55,17 @@
         list-style: none;
         align-items: center;
         justify-content: center;
+        animation-duration: 1.2s;
+        animation-fill-mode: forwards;
     }
 
     &__link{
-        font-size: 1.5rem;
+        font-size: 2.2rem;
         color: black;
         text-decoration: none;
+        animation-delay: 1.2s;
+        animation-duration: 0.6s;
+        animation-fill-mode: forwards;
     }
 
     &__contact{
@@ -75,6 +80,9 @@
         font-size: 1.8rem;
         color: black;
         transition: all 0.4s;
+        animation-delay: 0.8s;
+        animation-duration: 0.6s;
+        animation-fill-mode: forwards;
 
         &:hover{
             cursor: pointer;
@@ -84,6 +92,50 @@
             background: #EB0101;
             border-radius: 1rem;
         }
+    }
+}
+
+@keyframes menuOpen{
+    0%{
+        height: 0;
+        width: 0;
+    }
+
+    100%{
+        height: 30rem;
+        width: 30rem;
+    }
+}
+
+@keyframes menuClose{
+    0%{
+        height: 30rem;
+        width: 30rem;
+    }
+
+    100%{
+        height: 0;
+        width: 0;
+    }
+}
+
+@keyframes textShow{
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes textHide{
+    0%{
+        opacity: 1;
+    }
+
+    100%{
+        opacity: 0;
     }
 }
 

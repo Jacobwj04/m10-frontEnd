@@ -19,19 +19,38 @@ const scrollToSection = (sectionId) => {
 
     const menuButton = document.getElementById("mobileNav--button");
     const mobileMenu = document.getElementById("mobileNav--menu");
+    const links = document.getElementsByClassName("mobileNav__listItem");
 
     const barOne = menuButton.children[0];
     const barTwo = menuButton.children[1];
 
     if(menuButtonClicked == true){
-        mobileMenu.style.display = "none";
+        for(let i = 0; i < links.length; i++){
+            links[i].style.animationName = "textHide";
+            links[i].style.animationDelay = "0s";
+            links[i].style.animationDuration = "0.3s";
+
+            setTimeout(function() {
+                links[i].style.display = "none";
+              }, 300);
+        }
+        mobileMenu.style.animationName = "menuClose";
         barOne.style.animationName = "barClose";
         barTwo.style.animationName = "barClose";
+        setTimeout(function() {
+            mobileMenu.style.display = "none";
+          }, 1000);
     }
 
     if(menuButtonClicked == false){
+        for(let i = 0; i < links.length; i++){
+            links[i].style.animationDuration = "1.2s";
+            links[i].style.animationName = "textShow";
+            links[i].style.display = "flex";
+        }
         barOne.style.animationName = "barOneCross";
         barTwo.style.animationName = "barTwoCross";
+        mobileMenu.style.animationName = "menuOpen";
         mobileMenu.style.display = "flex";
         menuButtonClicked = true;
     }

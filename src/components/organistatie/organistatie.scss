@@ -9,10 +9,12 @@
     animation-fill-mode: forwards;
 }
 
+$cardWidth: calc(100% / 3 - 4rem);
+
 .organistatie{
     margin-top: 5rem;
     width: 100%;
-    min-height: 20vh;
+    height: auto;
     padding: 0 9rem;
     display: flex;
     flex-direction: column;
@@ -41,7 +43,7 @@
     }
 
     &__card{
-        width: calc(100% / 3 - 4rem);
+        width: $cardWidth;
         @include card;
 
         &--active{
@@ -93,16 +95,22 @@
     }
 
     &__listItem{
-        font-size: 1.6rem;
+        display: flex;
+        align-items: baseline;
         &::before {
             content: ""; 
-            display: inline-block;
+            display: flex;
+            aspect-ratio: 1/1;
             width: 1rem; 
             height: 1rem;
             text-align: center;
             margin-right: 5px; 
             border: 1px solid #EB0101; 
           }
+    }
+
+    &__listText{
+        font-size: 1.3rem;
     }
 
     &__button{
@@ -115,6 +123,7 @@
         background: white;
         font-size: 1.5rem;
         transition: all 0.4s;
+        color: black;
 
         &:hover{
             cursor: pointer;
@@ -125,8 +134,19 @@
         }
     }
 
+    $textWidth: calc(100% / 3 - 4rem);
+
+    &__modalParagraph{
+        font-size: 1.8rem;
+        display: none;
+        width: $textWidth;
+        animation-fill-mode: forwards;
+        animation-delay: 0.4s;
+        animation-delay: 0.4s;
+    }
+
     &__hiddenTexts{
-        width: calc(100% / 3 - 4rem);
+        width: $textWidth;
         display: none;
         animation-fill-mode: forwards;
         animation-delay: 0.4s;
@@ -151,7 +171,7 @@
     }
 
     100%{
-        width: calc(100% / 3 - 4rem);
+        width: $cardWidth;
     }
 }
 
@@ -172,5 +192,127 @@
 
     100%{
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 81.25rem){
+    $cardWidth: 45rem;
+
+    .organistatie{
+
+        &__cards{
+            height: auto;
+            justify-content: center;
+        }
+
+        &__card{
+            width: $cardWidth;
+        }
+    }
+
+    @keyframes Retract{
+        0%{
+            width: 100%;
+        }
+    
+        100%{
+            width: $cardWidth;
+        }
+    }
+}
+
+@media screen and (max-width: 71.875rem){
+    .organistatie{
+        padding: 0 2rem;
+        
+        &__paragraph{
+            font-size: 1.5rem;
+        }
+
+        &__modalParagraph{
+            font-size: 1.5rem;
+        }
+
+        &__list{
+            margin-top: 1rem;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    }
+}
+
+@media screen and (max-width: 58.125rem){
+    $cardWidth: calc(100% - 2rem);
+    $textWidth: calc(100% / 2 - 4rem);
+
+    .organistatie{
+        align-items: center;
+
+        @mixin card{
+            height: auto;
+            width: $cardWidth;
+        }
+
+        &__card{
+            @include card;
+    
+            &--active{
+                @include card;
+                height: auto;
+            }
+    
+            &--retract{
+                @include card;
+            }
+    
+            &--add{
+                @include card;
+            }
+        }
+
+        &__modalParagraph{
+            width: $textWidth;
+        }
+
+        &__hiddenTexts{
+            width: $textWidth;
+        }
+    }
+
+    @keyframes Retract{
+        0%{
+            width: 100%;
+        }
+    
+        100%{
+            width: $cardWidth;
+        }
+    }
+}
+
+@media screen and (max-width: 38.75rem){
+    $textWidth: calc(100%);
+
+    .organistatie{
+
+        &__header{
+            height: auto;
+        }
+
+        &__modalParagraph{
+            width: $textWidth;
+        }
+
+        &__hiddenTexts{
+            width: $textWidth;
+        }
+
+        &__button{
+            position: relative;
+            bottom: 0;
+            right: 0;
+        }
     }
 }

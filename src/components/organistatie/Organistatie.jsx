@@ -19,7 +19,8 @@ const changeCardStyle = (id) => {
                 hiddenTextOne.style.display = '';
                 hiddenTextTwo.style.display = '';
                 let mainText = card.children[1];
-                mainText.style.width = ""
+                mainText.classList = "organistatie__paragraph";
+                mainText.style.display = '';
                 let cardButton = card.children[4];
                 cardButton.innerText = "Meer Informatie";
             }else{
@@ -45,7 +46,10 @@ const changeCardStyle = (id) => {
                 hiddenTextTwo.style.display = 'block';
                 hiddenTextTwo.style.animationName = "FadeIn"
                 let mainText = card.children[1];
-                mainText.style.width = "33%"
+                mainText.classList = "organistatie__modalParagraph";
+                mainText.style.display = 'block';
+                mainText.style.animationName = "FadeIn"
+                // mainText.style.width = "33%"
                 let cardButton = card.children[4];
                 cardButton.innerText = "Minder Informatie";
                 clicked = true;
@@ -76,7 +80,7 @@ const Organistatie = () => {
                         {card.list ? (
                             <ul className="organistatie__list">
                                  {card.listItems.map((card) => (
-                                    <li className="organistatie__listItem">{card.text}</li>
+                                    <li className="organistatie__listItem"><p className="organistatie__listText">{card.text}</p></li>
                                  ))}
                             </ul>
                             ) : (
