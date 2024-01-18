@@ -37,6 +37,7 @@ $cardWidth: calc(100% / 3 - 4rem);
         width: 100%;
         height: 55rem;
         display: flex;
+        justify-content: space-evenly;
         flex-wrap: wrap;
         gap: 4rem;
         list-style: none;
@@ -279,6 +280,12 @@ $cardWidth: calc(100% / 3 - 4rem);
         &__hiddenTexts{
             width: $textWidth;
         }
+
+        &__button{
+            position: relative;
+            bottom: 0;
+            right: 0;
+        }
     }
 
     @keyframes Retract{
@@ -307,12 +314,6 @@ $cardWidth: calc(100% / 3 - 4rem);
 
         &__hiddenTexts{
             width: $textWidth;
-        }
-
-        &__button{
-            position: relative;
-            bottom: 0;
-            right: 0;
         }
     }
 }
