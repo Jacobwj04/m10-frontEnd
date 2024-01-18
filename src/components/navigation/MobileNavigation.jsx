@@ -59,7 +59,11 @@ const scrollToSection = (sectionId) => {
     }
   }
 
-export default function mMbileNavigation() {
+export default function MobileNavigation() {
+    const location = useLocation();
+    const myQuery  = location.pathname;
+    let result = myQuery.slice(1);
+
     return(
         <>
         <nav className="mobileNav">
@@ -74,6 +78,12 @@ export default function mMbileNavigation() {
             </button>
         </nav>
         <ul className="mobileNav__list" id='mobileNav--menu'>
+            {result === "contact" || result === "projectPage" ?(
+                <li className="nav__linkItem">
+                <Link to="/" className="nav__link" onClick={() => scrollToSection("organistatie")}>Home</Link>
+                </li>
+                ):(
+                <>
                 <li className="mobileNav__listItem">
                     <Link to="#" className="mobileNav__link" onClick={() => scrollToSection("organistatie")}>organistatie</Link>
                 </li>
@@ -83,9 +93,15 @@ export default function mMbileNavigation() {
                 <li className="mobileNav__listItem">
                     <Link to="#" className="mobileNav__link" onClick={() => scrollToSection("wekenBij")}>wekenBij</Link>
                 </li>
-                <li className="mobileNav__listItem">
+                </>
+                )}
+                {result === "contact" ?(
+                    <></>
+                ):(
+                    <li className="mobileNav__listItem">
                     <Link to="/contact" className="mobileNav__contact">Contact</Link>
-                </li>
+                    </li>
+                )}
             </ul>
         </>
     )

@@ -18,7 +18,6 @@ const Navigation = () =>{
     const location = useLocation();
     const myQuery  = location.pathname;
     let result = myQuery.slice(1);
-    console.log(result)
 
     return(
         <>
