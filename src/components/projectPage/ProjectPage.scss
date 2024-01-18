@@ -59,7 +59,8 @@
             position: absolute;
             top: 50%;
             left: 0;
-            transform: translateY(-50%)
+            transform: translateY(-50%);
+            color: black;
         }
 
         &--prev{
@@ -67,7 +68,8 @@
             position: absolute;
             top: 50%;
             right: 0;
-            transform: translateY(-50%)
+            transform: translateY(-50%);
+            color: black;
         }
     }
 
@@ -100,5 +102,38 @@
 
     &__text{
         font-size: 1.8rem;
+    }
+}
+
+@media screen and (max-width: 71.875rem){
+    .projectPage{
+        &__banner{
+            padding: 0 2rem;
+        }
+
+        &__textSection{
+            padding: 0 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 46.875rem){
+    .projectPage{
+        &__title{
+            font-size: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 56.25rem){
+    .projectPage{
+        &__textList{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        &__textListItem{
+            width: 100%;
+        }
     }
 }
