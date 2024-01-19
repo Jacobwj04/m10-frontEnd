@@ -42,7 +42,15 @@ const scrollToSection = (sectionId) => {
           }, 1000);
     }
 
+    const dropdownMenu = document.getElementById("mobileNav--menu");
+
+    if(dropdownMenu.style.display === "block"){
+        dropdownMenu.style.display = "none";
+        menuButtonClicked = false;
+    }
+
     if(menuButtonClicked == false){
+
         for(let i = 0; i < links.length; i++){
             links[i].style.animationDuration = "1.2s";
             links[i].style.animationName = "textShow";

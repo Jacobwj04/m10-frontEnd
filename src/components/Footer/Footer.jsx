@@ -8,7 +8,6 @@ export default function Footer() {
     const location = useLocation();
     const myQuery  = location.pathname;
     let result = myQuery.slice(1);
-    console.log(result);
 
     return (
         <footer className="footer">
